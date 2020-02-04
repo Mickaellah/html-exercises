@@ -5,7 +5,7 @@
         <title>02: Tables</title>
     </head>
     <body>
-        <table sammary="3 types of fruit, totalling 530 Ar."
+        <table summary="3 types of fruit, totalling 530 Ar.">
             <thead>
                 <tr>
                     <th scope="col" id="header_item">Item</th>
@@ -14,12 +14,6 @@
                     <th scope="col" id="header_price">Price</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th scope="row" colspan="3" id="row_total">Total</th>
-                    <th headers="row_total header_price">530 Ar</th>
-                </tr>
-            </tfoot>
             <tbody>
                 <tr>
                     <th headers="header_item" scope="row" id="row_bananas">Bananas</th>
@@ -40,6 +34,12 @@
                     <td headers="row_plums header_price">100 Ar</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="3" id="row_total">Total</th>
+                    <th headers="row_total header_price">530 Ar</th>
+                </tr>
+            </tfoot>
         </table>
     </body>
 </html> 
