@@ -16,26 +16,24 @@
     </h1>
   </header>
   <main>
-    <form action="/action_page.php">
-      <header>
-        <h2>Log in</h2>
-        <p>Please log in before accessing our website</p>
-      </header>
+    <header>
+      <h2>Log in</h2>
+      <p>Please log in before accessing our website</p>
+    </header>
+    <form action="/log-in" method="POST"
       <p>
-        <b>Enter your email address.</b>
+        <label>
+          E-mail address<br>
+          <input type="email" name="username" required>
+        </label>
       </p>
-      <div>
-        <input type="email" name="username" placeholder="username" required>
-      </div>
       <p>
-        <b>Enter your password.</b>
+        <label>
+          Password<br>
+          <input type="password" name="password" required>
+        </label>
       </p>
-      <div>
-        <input type="password" name="password" placeholder="password" required><br><br>
-      </div>
-      <div>
-        <input type="submit" value="Sign in">
-      </div>
+      <button type="submit">Log in</button>
     </form>
 
 
