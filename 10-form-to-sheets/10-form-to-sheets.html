@@ -17,65 +17,61 @@
     <!--
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
-      -->
-    <header>
-      <h1>Malagasy artists</h1>
-    </header>
-
-    <fieldset>
-      <legend>Contributor</legend>
-      <input type="text" name="contributor" value="Clopedia">
-    </fieldset>
-
-    <fieldset>
-      <legend>Artist_name</legend>
-      <input type="text" name="artist_name" value="Alson">
-    </fieldset>
-
-    <fieldset>
-      <legend>Artist_id</legend>
-      <input type="text" name="artist_id" value="alson">
-    </fieldset>
-
-    <fieldset>
-      <legend>Genre</legend>
-      <ul>
-        <li>
-          <input type="radio" name="genre" value="dance">
-          Dance
-        </li>
-
-        <li>
-          <input type="radio" name="genre" value="electronic">
-          Electronic
-        </li>
-
-        <li>
-          <input type="radio" name="genre" value="RnB">
-          RnB
-        </li>
-      </ul>
-    </fieldset>
-
-    <fieldset>
-      <legend>Photo_url</legend>
-      <input type="url" name="photo_url"
-        value="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.newsmada.com%2F2018%2F07%2F06%2Falson-la-musique-sapprend-secoute-se-vit%2F&psig=AOvVaw1LPLm2Ds4O8tpP8gl9AxC1&ust=1581574929937000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJjHxfCvy-cCFQAAAAAdAAAAABAK">
-    </fieldset>
-
-    <fieldset>
-      <legend>Biography</legend>
-      <input type="text" name="biography" value="Go to the website">
-    </fieldset>
-
-    <fieldset>
-      <legend>Website</legend>
-      <input type="url" name="website" value="https://web.facebook.com/OfficielAlson/?_rdc=1&_rdr">
-    </fieldset>
+    -->
+      <input type="hidden" name="contributor" value="Clopedia">
+    <p>
+      <label>
+        Artist's name<br>
+        <input type="text" name="artist_name" required><br>
+      </label>
+    </p>
+    <p>
+      <label>
+       Artist's ID<br>
+        <input type="text" name="artist_id" pattern="[a-z-_]+" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Genre<br>
+        <select name="genre">
+          <optgroup label="Malagasy Genres">
+            <option value="tsapiky">Tsapiky</option>
+            <option value="kilalaky">Kilalaky</option>
+            <option value="salegy">Salegy</option>
+            <option value="malesa">Malesa</option>
+          </optgroup>
+          <optgroup label="International Genres">
+            <option value="pop">Pop</option>
+            <option value="rock">Rock</option>
+            <option value="rnb">RnB</option>
+          </optgroup>
+        </select>
+      </label>
+    </p>
+    <p>
+      <label>
+        Photo web address<br>
+        <input type="url" name="photo_url">
+      </label>
+    </p>
+    <p>
+      <label>
+        Biography<br>
+        <input type="text" name="biography">
+      </label>
+    </p>
+    <p>
+      <label>
+        Website<br>
+        <input type="url" name="website">
+      </label>
+    </p>
 
 
-
-    <button type="submit">Save</button>
+    <p>
+      <button type="submit">Save</button>
+    </p>
   </form>
 </body>
 
