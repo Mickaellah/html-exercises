@@ -18,21 +18,21 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        <strong>Wait!</strong> shouted Jesse.
+        <q><strong>Wait</strong>!</q> shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now <time datetime="02:00">2pm</time>, on Wednesay the 12<sup>th</sup> of February, 2020.<br>
+        The time is now <time datetime="2020-02-12T14:00:00+03:00">2pm, on Wednesay</time>
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements <dfn>H</dfn> and <dfn>O</dfn>, bond as H<sub>2</sub>0, or water (as it is colloquaially known).
+        The elements <abbr title="Hydrogen">H</addr> and <abbr title="Oxygen">O</abbr>, bond as H<sub>2</sub>0, or <i>water</i> (as it is colloquaially known).
       </p>
 
       <hr>
@@ -40,29 +40,13 @@
       <!-- Sometimes we just want to make something look a certain way -->
       <p>
         Editor's Notes:<br>
-      </p>
 
-      <ol>
-        <li>
-          Please use <kbd>CTRL+B</kbd>to bold this word: Critical<br>
-        </li>
-
-        <li>
-          Please use <kbd>CTRL+I</kbd>to italicise this word: Doubtful<br>
-        </li>
-
-        <li>
+          Please use <kbd>CTRL</kbd> + <kbd>B</kbd> to bold this word: <b>Critical</b><br>
+          Please use <kbd>CTRL</kbd> + <kbd>I</kbd> to italicise this word: <i>Doubtful</i><br>
           Please underline this word: <u>Thinking</u><br>
-        </li>
-
-        <li>
           Please put a line through this word: <del>Assuming</del><br>
-        </li>
-
-        <li>
           Please show that the word 'slow' was removed, and quick added in its place in the following sentence: "The <del>slow</del> <ins>quick</ins> brown fox jumped over the lazy dog."<br>
-        </li>
-      </ol>
+        </p>
 
       <!-- I really don't understand, are those just sentences or we have to make the word that asked to be in bold, italic, underline, etc? -->
 
@@ -70,31 +54,24 @@
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
       <p>
-        <em><q>Woah! <strong>that</strong> was unexpected!</q></em> exclaimed Keith.<br>
+        <q><em>Woah!</em> <code>that</code> was unexpected!</q> exclaimed Keith.<br>
         Curiously, Jesse looked at the output on Keith's screen and it said:<br>
-
-          Unexpected value for argument <strong>that</strong><br>
+<pre>Unexpected value for argument <code>that</code><br>
+  - in function <code>clickHandler,</code> line 12<br>
+  - called from function anonymous, line 34<br>
+</pre>
       </p>
-          <ul>
-            <li>
-              in function clickHandler, <var>line 12</var><br>
-            </li>
-
-            <li>
-              called from function anonymous, <var>line 34</var><br>
-            </li>
-          </ul>
 
       <hr>
 
       <!-- We can add helpful markup to highlight words -->
       <p>
-        Your search term: <mark>Helicopter</mark> was found in the following documents:
+        Your search term: <mark>'Helicopter'</mark> was found in the following documents:
       </p>
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          The Model <mark>222</mark> is a helicopter made by the Bell Helicopter Corporation.
+          The Model 222 is a <mark>helicopter</mark> made by the Bell <mark>Helicopter</mark> Corporation.
         </li>
       </ul>
 
