@@ -18,21 +18,21 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        "Wait!" shouted Jesse.
+        <strong>Wait!</strong> shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, on Wednesay the 12th of February, 2020.
+        The time is now <time datetime="02:00">2pm</time>, on Wednesay the 12<sup>th</sup> of February, 2020.<br>
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements H and O, bond as H20, or water (as it is colloquaially known).
+        The elements <dfn>H</dfn> and <dfn>O</dfn>, bond as H<sub>2</sub>0, or water (as it is colloquaially known).
       </p>
 
       <hr>
@@ -40,39 +40,61 @@
       <!-- Sometimes we just want to make something look a certain way -->
       <p>
         Editor's Notes:<br>
-
-        Please use CTRL+B to bold this word: Critical<br>
-        Please use CTRL+I to italicise this word: Doubtful<br>
-
-        Please underline this word: Thinking<br>
-        Please put a line through this word: Assuming<br>
-
-        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-        "The slow brown fox jumped over the lazy dog."<br>
       </p>
+
+      <ol>
+        <li>
+          Please use <kbd>CTRL+B</kbd>to bold this word: Critical<br>
+        </li>
+
+        <li>
+          Please use <kbd>CTRL+I</kbd>to italicise this word: Doubtful<br>
+        </li>
+
+        <li>
+          Please underline this word: <u>Thinking</u><br>
+        </li>
+
+        <li>
+          Please put a line through this word: <del>Assuming</del><br>
+        </li>
+
+        <li>
+          Please show that the word 'slow' was removed, and quick added in its place in the following sentence: "The <del>slow</del> <ins>quick</ins> brown fox jumped over the lazy dog."<br>
+        </li>
+      </ol>
+
+      <!-- I really don't understand, are those just sentences or we have to make the word that asked to be in bold, italic, underline, etc? -->
 
       <hr>
 
       <!-- We can do the same with samples of code, even maintaining the whitespace: -->
       <p>
-        "Woah! 'that' was unexpected!" exclaimed Keith.<br>
+        <em><q>Woah! <strong>that</strong> was unexpected!</q></em> exclaimed Keith.<br>
         Curiously, Jesse looked at the output on Keith's screen and it said:<br>
 
-          Unexpected value for argument 'that'
-            - in function clickHandler, line 12
-            - called from function anonymous, line 34
+          Unexpected value for argument <strong>that</strong><br>
       </p>
+          <ul>
+            <li>
+              in function clickHandler, <var>line 12</var><br>
+            </li>
+
+            <li>
+              called from function anonymous, <var>line 34</var><br>
+            </li>
+          </ul>
 
       <hr>
 
       <!-- We can add helpful markup to highlight words -->
       <p>
-        Your search term: 'Helicopter' was found in the following documents:
+        Your search term: <mark>Helicopter</mark> was found in the following documents:
       </p>
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          The Model 222 is a helicopter made by the Bell Helicopter Corporation.
+          The Model <mark>222</mark> is a helicopter made by the Bell Helicopter Corporation.
         </li>
       </ul>
 
