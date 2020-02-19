@@ -24,20 +24,22 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/services">Our services</a>
-          </li>
-          <li>
-            <a href="/about-us">About us</a>
-          </li>
-          <li>
-            <a href="/contact-us">Contact us</a>
-          </li>
-        </ul>
+        <nav>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/services">Our services</a>
+            </li>
+            <li>
+              <a href="/about-us">About us</a>
+            </li>
+            <li>
+              <a href="/contact-us">Contact us</a>
+            </li>
+          </ul>
+      </nav>
       </section>
 
       <section>
@@ -55,54 +57,56 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
-        <p>
-          <label>First name
-            <input type="text" name="profile_first_name" value="profile_first_name" required>
-          </label><br>
-        </p>
-        <p>
-          <label>Family name
-            <input type="text" name="profile_family_name" value="profile_family_name" required>
-          </label><br>
-        </p>
-        <p>
-          <label>Email
-            <input type="email" name="username" value="username">
-          </label><br>
-        </p>
-        <p>
-          <label>Phone number
-            <input type="tel" name="phone" value="phone">
-          </label><br>
-        </p>
-        <label>Gender</label>
-        <ul>
-          <li>
-            <label>
-              <input type="radio" name="male" value="gender">
-              m
-            </label>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <label>
-              <input type="radio" name="female" value="gender">
-              f
-            </label>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <label>
-              <input  type="radio" name="not_disclose" value="gender">
-              na
-            </label>
-          </li>
-        </ul>
-        <label>Photo
-          <input type="url" name="profile_photo">
-        </label>
+        <form action="/profile/save" method="POST">
+          <p>
+            <label>First name
+              <input type="text" name="profile_first_name" required>
+            </label><br>
+          </p>
+          <p>
+            <label>Family name
+              <input type="text" name="profile_family_name" required>
+            </label><br>
+          </p>
+          <p>
+            <label>Email
+              <input type="email" name="username" required>
+            </label><br>
+          </p>
+          <p>
+            <label>Phone number
+              <input type="tel" name="phone">
+            </label><br>
+          </p>
+          <label>Gender</label>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="male" value="gender">
+                m
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="female" value="gender">
+                f
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label>
+                <input  type="radio" name="not_disclose" value="gender">
+                na
+              </label>
+            </li>
+          </ul>
+          <label>Photo
+            <input type="file" name="profile_photo" accept="image/png, image/jpg, image/webp">
+          </label>
+        </form>
       </section>
 
       <section>
