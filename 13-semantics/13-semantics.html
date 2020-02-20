@@ -14,7 +14,6 @@
       </h1>
     </header>
     <main>
-
       <section>
         <h2>A menu of a list of links</h2>
         <!--
@@ -24,24 +23,23 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
-        <nav>
-          <ul>
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="/services">Our services</a>
-            </li>
-            <li>
-              <a href="/about-us">About us</a>
-            </li>
-            <li>
-              <a href="/contact-us">Contact us</a>
-            </li>
-          </ul>
-      </nav>
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="/services">Our services</a>
+              </li>
+              <li>
+                <a href="/about-us">About us</a>
+              </li>
+              <li>
+                <a href="/contact-us">Contact us</a>
+              </li>
+            </ul>
+        </nav>
       </section>
-
       <section>
         <h2>A profile update form</h2>
         <!--
@@ -57,7 +55,7 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
-        <form action="/profile/save" method="POST">
+        <form action="/profile/save" method="POST" enctype="multipart/form-data">
           <p>
             <label>First name
               <input type="text" name="profile_first_name" required>
@@ -108,23 +106,26 @@
           </label>
         </form>
       </section>
-
       <section>
         <h2>An excerpt</h2>
         <!--
           3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
         -->
-        <p>
-          <q>The only reason you had me was so you could get a maid you wouldn't have to pay,</q>you'll say bitterly, dragging the vacuum cleaner out of the closet.
-        </p>
-        <p>
-          <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q>
-        </p>
-        <p>
-          <q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.
-        </p>
+        <blockquote>
+          <p>
+            <q>The only reason you had me was so you could get a maid you wouldn't have to pay,</q>you'll say bitterly, dragging the vacuum cleaner out of the closet.
+          </p>
+          <p>
+            <q>That's right!</q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q>
+          </p>
+          <p>
+            <q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.
+          </p>
+          <footer>
+            - From Ted Chiang, in <cite>The story of your life</cite>
+          </footer>
+        </blockquote>
       </section>
-
       <section>
         <h2>A table</h2>
         <!--
@@ -176,10 +177,7 @@
             </tr>
           </tbody>
         </table>
-
-
       </section>
-
       <section>
         <h2>Search results</h2>
         <!--
@@ -226,7 +224,28 @@
           6. Create the HTML necessary for the image `markup.png` in this folder.
           It is a definition of the word 'Markup'.
         -->
-        <dfn><img src="markup.png" alt="There are three definitions for the word 'Markup'"></dfn>
+        <h2>markup</h2>
+        <p>/ˈmɑːkʌp/</p>
+        <p>
+          <i><b>noun</b></i>
+        </p>
+        <p>
+          noun: <b>markup</b>; plural noun: <b>markups</b>; noun: <b>marku-up</b>; plural noun: <b>mark-ups</b>
+        </p>
+        <ol>
+          <li>
+            <b>the amount added to the cost price of goods to cover overheads and point</b><br>
+            <q>a markup of 50 per cent</q>
+          </li>
+          <li>
+            <b>the process or result of correcting text in preparation for printing</b>
+          </li>
+          <li>
+            <span>COMPUTING</span><br>
+            <b>a set of tags assigned to elements of a text to indicate their relation to the rest of the text or dictate how the should be displayed</b><br>
+            <q>markup language</q>
+          </li>
+        </ol>
       </section>
 
     </main>
