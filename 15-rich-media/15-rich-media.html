@@ -20,20 +20,69 @@
           <h2>Audio</h2>
         </header>
         <!-- Add the audio example here -->
+        <ul>
+          <li>
+            <audio controls>
+              <source src="audio/early-high_wails.ogg" type="audio/ogg">
+              <track src="audio/early-high_wails.ogg">
+            </audio>
+          </li>
+          <li>
+            <audio controls>
+              <source src="audio/late-high_wails-long.ogg" type="audio/ogg">
+              <track src="audio/late-high_wails-long.ogg">
+            </audio>
+          </li>
+          <li>
+            <audio controls>
+              <source src="audio/late-high_wails.ogg" type="audio/ogg">
+              <track src="audio/late-high_wails.ogg">
+            </audio>
+          </li>
+          <li>
+            <audio controls>
+              <source src="audio/moan.ogg" type="audio/ogg">
+              <track src="audio/moan.ogg">
+            </audio>
+          </li>
+          <Li>
+            <audio controls>
+              <source src="audio/purr.ogg" type="audio/ogg">
+              <track src="audio/purr.ogg">
+            </audio>
+          </li>
+        </ul>
       </article>
       <article>
         <header>
           <h2>Video</h2>
         </header>
         <!-- Add the video example here -->
+        <video width="283" height="175" controls>
+          <source src="video/chip.mp4" type="video/mp4">
+          <track src="video/chip.mp4">
+          <link href="video/rich-media.css" rel="stylesheet">
+        </video>
       </article>
       <article>
         <header>
           <h2>Canvas</h2>
         </header>
         <!-- Add the canvas example here -->
+        <canvas id="mycanvas" width="240" height="150"></canvas>
       </article>
     </main>
     <!-- For the canvas to work, we'll need the script included here -->
   </body>
+  <script type="text/javascript">
+    function draw() {
+      var canva = document.grtElementById('tutorial');
+      if (canvas.grtConctext) {
+        var ctx = canvas .grtConctext('2d');
+      }
+    }
+  </script>
+  <style type="text/css">
+    canvas {border: 2px solid red; }
+  </style>
 </html>
